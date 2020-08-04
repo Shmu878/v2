@@ -12,6 +12,7 @@ public class ListArray {
         scanner();
         check();
     }
+
     static ArrayList<String> myList = new ArrayList<>(){{
         add("Просыпашки =(");
         add("Потягушки !)");
