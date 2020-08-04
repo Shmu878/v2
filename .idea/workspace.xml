@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="746cd209-855c-4f77-9335-cc1624f75d35" name="Default Changelist" comment="" />
+    <list default="true" id="746cd209-855c-4f77-9335-cc1624f75d35" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -15,7 +17,13 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="123" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="UPDATE_TYPE" value="MERGE" />
   </component>
   <component name="IgnoredFileRootStore">
     <option name="generatedRoots">
@@ -72,9 +80,63 @@
       <option name="presentableId" value="Default" />
       <updated>1596402809423</updated>
     </task>
+    <task id="LOCAL-00001" summary="i'm stuped">
+      <created>1596580975459</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1596580975459</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="master" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="RECENT_FILTERS">
+      <map>
+        <entry key="Branch">
+          <value>
+            <list>
+              <RecentGroup>
+                <option name="FILTER_VALUES">
+                  <option value="master" />
+                </option>
+              </RecentGroup>
+            </list>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="i'm stuped" />
+    <option name="LAST_COMMIT_MESSAGE" value="i'm stuped" />
+  </component>
   <component name="WindowStateProjectService">
+    <state x="423" y="45" key="CommitChangelistDialog2" timestamp="1596582143633">
+      <screen x="0" y="0" width="1538" height="900" />
+    </state>
+    <state x="423" y="45" key="CommitChangelistDialog2/0.0.1538.900@0.0.1538.900" timestamp="1596582143633" />
     <state width="1495" height="236" key="GridCell.Tab.0.bottom" timestamp="1596580795063">
       <screen x="0" y="0" width="1538" height="900" />
     </state>
@@ -91,14 +153,30 @@
       <screen x="0" y="0" width="1538" height="900" />
     </state>
     <state width="1495" height="236" key="GridCell.Tab.0.right/0.0.1538.900@0.0.1538.900" timestamp="1596580795063" />
-    <state x="361" y="184" key="Vcs.Push.Dialog.v2" timestamp="1596580930489">
+    <state x="146" y="78" key="MergeDialog" timestamp="1596582307984">
       <screen x="0" y="0" width="1538" height="900" />
     </state>
-    <state x="361" y="184" key="Vcs.Push.Dialog.v2/0.0.1538.900@0.0.1538.900" timestamp="1596580930489" />
+    <state x="146" y="78" key="MergeDialog/0.0.1538.900@0.0.1538.900" timestamp="1596582307984" />
+    <state x="481" y="167" key="MultipleFileMergeDialog" timestamp="1596582312381">
+      <screen x="0" y="0" width="1538" height="900" />
+    </state>
+    <state x="481" y="167" key="MultipleFileMergeDialog/0.0.1538.900@0.0.1538.900" timestamp="1596582312381" />
+    <state x="361" y="184" key="Vcs.Push.Dialog.v2" timestamp="1596582147974">
+      <screen x="0" y="0" width="1538" height="900" />
+    </state>
+    <state x="361" y="184" key="Vcs.Push.Dialog.v2/0.0.1538.900@0.0.1538.900" timestamp="1596582147974" />
     <state x="465" y="275" key="com.intellij.ide.util.TipDialog" timestamp="1596536878851">
       <screen x="0" y="0" width="1538" height="900" />
     </state>
     <state x="465" y="275" key="com.intellij.ide.util.TipDialog/0.0.1538.900@0.0.1538.900" timestamp="1596536878851" />
+    <state x="578" y="368" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1596582329579">
+      <screen x="0" y="0" width="1538" height="900" />
+    </state>
+    <state x="578" y="368" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1538.900@0.0.1538.900" timestamp="1596582329579" />
+    <state x="550" y="164" key="git4idea.branch.GitSmartOperationDialog" timestamp="1596582286688">
+      <screen x="0" y="0" width="1538" height="900" />
+    </state>
+    <state x="550" y="164" key="git4idea.branch.GitSmartOperationDialog/0.0.1538.900@0.0.1538.900" timestamp="1596582286688" />
     <state x="475" y="70" key="refactoring.ChangeSignatureDialog" timestamp="1596547334756">
       <screen x="0" y="0" width="1538" height="900" />
     </state>
