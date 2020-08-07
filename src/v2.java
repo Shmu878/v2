@@ -22,9 +22,7 @@ public class v2 {
     static String[] scanAnswer;
     public static void scanCheck(){
         Scanner scan = new Scanner(System.in);
-        scanAnswer = scan.nextLine().split("\\s", 3);
-        if (scanAnswer[0].equals("ADD") && scanAnswer[1].equals("[^0-9]")) {scanAnswer = scan.nextLine().split("\\s", 2);}
-        if (scanAnswer[0].equals("DELETE")) {scanAnswer = scan.nextLine().split("\\s", 2);}
+        scanAnswer = scan.nextLine().split("\\s", 2);
         if (scanAnswer[0].equals("LIST")) {pushList();}
         else if (scanAnswer[0].equals("ADD")) {pushAdd();}
         else if (scanAnswer[0].equals("EDIT")) {pushEdit();}
@@ -40,12 +38,15 @@ public class v2 {
         scanCheck();
     }
     public static void pushAdd(){
-        if (scanAnswer[1].equals("[0-9]") && Integer.parseInt(scanAnswer[1]) > 0) {
-            if (Integer.parseInt(scanAnswer[1]) < myList.size()) {
-                myList.add(Integer.parseInt(scanAnswer[1]), scanAnswer[2]);
-            } else {myList.add(scanAnswer[2]);}
-        } else if (scanAnswer[1].equals("[0-9]") && Integer.parseInt(scanAnswer[1]) < 0) {
-            System.out.println("Команда введена с неверными параметрами!");
+        String[] scanAdd = scanAnswer[1].split("\\s", 2);
+        if (scanAdd[0].matches("[0-9]")) {
+            if (Integer.parseInt(scanAdd[0]) >= 0 && Integer.parseInt(scanAdd[0]) < myList.size()) {
+                myList.add(Integer.parseInt(scanAdd[0]), scanAdd[1]);
+            } else if (Integer.parseInt(scanAdd[0]) > myList.size()) {
+                myList.add(scanAdd[1]);
+            } else if (Integer.parseInt(scanAdd[0]) < 0) {
+                System.out.println("Команда введена с неверными параметрами!");
+            }
         } else {
             myList.add(scanAnswer[1]);
         }
@@ -53,18 +54,18 @@ public class v2 {
         scanCheck();
     }
     public static void pushEdit(){
-        if (scanAnswer[1].equals("[^0-9]")) {System.out.println("Команда введена с неверными параметрами!");
-        } else if (scanAnswer[1].equals("[0-9]") && Integer.parseInt(scanAnswer[1]) > myList.size()) {
+        String[] scanEdit = scanAnswer[1].split("\\s", 2);
+        if (Integer.parseInt(scanEdit[0]) < 0 || Integer.parseInt(scanEdit[0]) > myList.size()) {
             System.out.println("Команда введена с неверными параметрами!");
-        } else { myList.set(Integer.parseInt(scanAnswer[1]), scanAnswer[2]);}
+        } else { myList.set(Integer.parseInt(scanEdit[0]), scanEdit[1]);}
         System.out.println("Введите новую команду.");
         scanCheck();
     }
     public static void pushDelete(){
-        if (scanAnswer[1].equals("[^0-9]")) {System.out.println("Команда введена с неверными параметрами!");
-        } else if (scanAnswer[1].equals("[0-9]") && Integer.parseInt(scanAnswer[1]) > myList.size()) {
+        String[] scanDelete = scanAnswer[1].split("\\s", 2);
+        if (scanDelete[0].matches("[0-9]") && Integer.parseInt(scanDelete[0]) > myList.size()) {
             System.out.println("Команда введена с неверными параметрами!");
-        } else {myList.remove(Integer.parseInt(scanAnswer[1]));}
+        } else {myList.remove(Integer.parseInt(scanDelete[0]));}
         System.out.println("Введите новую команду.");
         scanCheck();
     }
